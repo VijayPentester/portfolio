@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vijay — Application Security &amp; Bug Bounty</title>
+<meta name="description" content="Vijay — final-year Computer Science And Engineering student focused on web application penetration testing and bug bounty hunting.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="grain" aria-hidden="true"></div>
+
+<header class="site-nav" id="site-nav">
+  <a href="#top" class="nav-mark">vijay<span class="nav-mark-dim">.sec</span></a>
+  <nav class="nav-links" id="nav-links">
+    <a href="#about">about</a>
+    <a href="#skills">skills</a>
+    <a href="#bugbounty">bug bounty</a>
+    <a href="#reconpipe">reconpipe</a>
+    <a href="#projects">projects</a>
+    <a href="#certifications">certifications</a>
+    <a href="#github">github</a>
+    <a href="#contact">contact</a>
+    <a href="#resume" class="nav-cta">resume</a>
+  </nav>
+  <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-text">
+      <p class="hero-role">B.E. Computer Science &amp; Engineering, Cybersecurity focus</p>
+      <h1>Vijay</h1>
+      <p class="hero-pitch">I break web applications for a living, or at least I'm training to. Final-year student building recon tooling and hunting on Bugcrowd, with a habit of automating the boring parts of a pentest first.</p>
+      <div class="hero-actions">
+        <a href="#reconpipe" class="btn btn-primary">See ReconPipe</a>
+        <a href="#resume" class="btn btn-ghost">Download resume</a>
+      </div>
+      <div class="hero-meta">
+        <span>Anjalai Ammal Mahalingam Engineering College</span>
+        <span class="dot-sep"></span>
+        <span>Class of 2027</span>
+      </div>
+    </div>
+
+    <div class="hero-terminal" aria-hidden="true">
+      <div class="term-bar">
+        <span class="term-dot"></span><span class="term-dot"></span><span class="term-dot"></span>
+        <span class="term-title">reconpipe — zsh</span>
+      </div>
+      <div class="term-body" id="term-body"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="section-head">
+      <h2>About</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-copy">
+        <p>I'm a final-year CSE student specializing in cybersecurity, with a focus on web application security and bug bounty hunting. Most of my learning happens by building things: a recon pipeline that chains five separate tools into one workflow, a dashboard to watch it run, and a growing set of notes from working through real assessment methodology rather than just reading about it.</p>
+        <p>Right now I split my time between structured learning — PortSwigger's Web Security Academy, OWASP methodology, working through <em>Real-World Bug Hunting</em> — and applying it directly on Bugcrowd's public programs. I'd rather understand why a vulnerability class exists than memorize the payload that triggers it.</p>
+        <p>I'm looking to start a full-time application security or penetration testing role from January 2027.</p>
+      </div>
+      <dl class="about-facts">
+        <div>
+          <dt>Education</dt>
+          <dd>B.E. Computer Science &amp; Engineering<br>Anjalai Ammal Mahalingam Engineering College</dd>
+        </div>
+        <div>
+          <dt>Focus</dt>
+          <dd>Web application security, recon automation, bug bounty</dd>
+        </div>
+        <div>
+          <dt>Currently</dt>
+          <dd>Hunting on Bugcrowd &middot; preparing for eJPT</dd>
+        </div>
+        <div>
+          <dt>Available from</dt>
+          <dd>January 2027</dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section" id="skills">
+    <div class="section-head">
+      <h2>Skills</h2>
+      <p class="section-sub">Grouped by how I actually use them, not ranked out of five stars.</p>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-group">
+        <h3>Web application security</h3>
+        <ul class="chip-list">
+          <li>IDOR</li><li>Broken authentication</li><li>XSS</li><li>CSRF</li>
+          <li>Business logic flaws</li><li>API security <span class="chip-note">learning</span></li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h3>Tooling</h3>
+        <ul class="chip-list">
+          <li>Burp Suite</li><li>Nuclei</li><li>Subfinder</li><li>Httpx</li>
+          <li>ParamSpider</li><li>Waybackurls</li><li>Amass</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h3>Build &amp; automate</h3>
+        <ul class="chip-list">
+          <li>Python</li><li>Bash</li><li>Linux (Kali)</li><li>Flask</li><li>SQLite</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h3>Currently sharpening</h3>
+        <ul class="chip-list">
+          <li>API security testing</li><li>Burp Suite Decoder</li><li>eJPT syllabus</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- BUG BOUNTY -->
+  <section class="section section-alt" id="bugbounty">
+    <div class="section-head">
+      <h2>Bug bounty &amp; methodology</h2>
+      <p class="section-sub">Active on Bugcrowd, learning in public through structured practice.</p>
+    </div>
+    <div class="method-grid">
+      <ol class="method-steps">
+        <li>
+          <h3>Recon first</h3>
+          <p>Before touching a single request, I map the attack surface — subdomains, live hosts, endpoints, parameters — the same pipeline ReconPipe automates.</p>
+        </li>
+        <li>
+          <h3>Live as a normal user</h3>
+          <p>I spend real time using a target the way an ordinary user would before hunting, to build an intuition for what "normal" looks like and where it might break.</p>
+        </li>
+        <li>
+          <h3>Test against the OWASP core</h3>
+          <p>IDOR, broken authentication, XSS, CSRF, and business logic flaws — worked systematically rather than firing a scanner and hoping.</p>
+        </li>
+        <li>
+          <h3>Write it up properly</h3>
+          <p>A finding isn't done until it's reproducible from a clean write-up: impact, steps, evidence.</p>
+        </li>
+      </ol>
+      <div class="method-side">
+        <div class="stat-card">
+          <span class="stat-label">Platform</span>
+          <span class="stat-value">Bugcrowd</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-label">Training ground</span>
+          <span class="stat-value">PortSwigger Web Security Academy</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-label">Reading</span>
+          <span class="stat-value">Real-World Bug Hunting — Peter Yaworski</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RECONPIPE FEATURE -->
+  <section class="section" id="reconpipe">
+    <div class="section-head">
+      <h2>ReconPipe</h2>
+      <p class="section-sub">Final-year project · Python CLI recon pipeline · Recon Engine module owned end-to-end</p>
+    </div>
+    <div class="feature-grid">
+      <div class="feature-copy">
+        <p>ReconPipe is a four-person final-year project: a command-line tool that chains reconnaissance utilities into one repeatable pipeline instead of running each one by hand. I own the Recon Engine module — the part that actually runs the scans and hands off clean data to the rest of the tool.</p>
+        <p>The pipeline runs Subfinder for subdomain enumeration, feeds live hosts through Httpx, pulls historical and current endpoints with Waybackurls and ParamSpider, then scans the result with Nuclei — de-duplicating and reconciling output at every handoff so the next stage isn't working with noise.</p>
+        <p>Next up: a risk score computed automatically from Nuclei severity right after each scan, feeding into a consolidated report.</p>
+        <a href="https://github.com/VijayPentester" class="link-arrow" target="_blank" rel="noopener">View the repository on GitHub</a>
+      </div>
+      <div class="pipeline">
+        <div class="pipe-step"><span class="pipe-index">01</span><span class="pipe-name">Subfinder</span><span class="pipe-desc">Passive subdomain enumeration</span></div>
+        <div class="pipe-step"><span class="pipe-index">02</span><span class="pipe-name">Httpx</span><span class="pipe-desc">Live host &amp; tech fingerprinting</span></div>
+        <div class="pipe-step"><span class="pipe-index">03</span><span class="pipe-name">Waybackurls</span><span class="pipe-desc">Historical endpoint discovery</span></div>
+        <div class="pipe-step"><span class="pipe-index">04</span><span class="pipe-name">ParamSpider</span><span class="pipe-desc">Parameter mining</span></div>
+        <div class="pipe-step"><span class="pipe-index">05</span><span class="pipe-name">Nuclei</span><span class="pipe-desc">Vulnerability scanning &amp; severity triage</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section section-alt" id="projects">
+    <div class="section-head">
+      <h2>Projects</h2>
+    </div>
+    <div class="project-grid">
+      <article class="project-card">
+        <h3>Aries</h3>
+        <p class="project-tag">Flask &middot; SQLite &middot; Dashboard</p>
+        <p>A dark-themed web dashboard wrapping ReconPipe — scan history, a start-scan button that triggers the pipeline directly, and Nuclei findings broken down by severity. Built to be run straight from a laptop rather than needing a hosted server.</p>
+      </article>
+      <article class="project-card">
+        <h3>ReconPipe</h3>
+        <p class="project-tag">Python &middot; CLI &middot; Recon automation</p>
+        <p>The recon pipeline detailed above — see the full breakdown in the ReconPipe section.</p>
+        <a href="#reconpipe" class="link-arrow">Read more</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section class="section" id="certifications">
+    <div class="section-head">
+      <h2>Certifications</h2>
+    </div>
+    <div class="cert-grid">
+      <div class="cert-card">
+        <h3>NPTEL — Ethical Hacking</h3>
+        <p class="cert-status cert-done">Completed</p>
+      </div>
+      <div class="cert-card">
+        <h3>TryHackMe — Cyber Security 101</h3>
+        <p class="cert-status cert-done">Completed</p>
+      </div>
+      <div class="cert-card">
+        <h3>TryHackMe — Pre Security</h3>
+        <p class="cert-status cert-done">Completed</p>
+      </div>
+      <div class="cert-card">
+        <h3>eJPT</h3>
+        <p class="cert-status cert-progress">Targeting January 2027</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- GITHUB -->
+  <section class="section section-alt" id="github">
+    <div class="section-head">
+      <h2>GitHub</h2>
+      <p class="section-sub">Where the code actually lives.</p>
+    </div>
+    <div class="github-card">
+      <div class="github-info">
+        <h3 id="gh-username">@VijayPentester</h3>
+        <p id="gh-bio">Recon tooling, security scripts, and work in progress.</p>
+        <a href="https://github.com/VijayPentester" class="btn btn-primary" target="_blank" rel="noopener">Visit GitHub profile</a>
+      </div>
+      <div class="github-stats" id="gh-stats">
+        <div class="gh-stat"><span class="gh-stat-value" id="gh-repos">—</span><span class="gh-stat-label">public repos</span></div>
+        <div class="gh-stat"><span class="gh-stat-value" id="gh-followers">—</span><span class="gh-stat-label">followers</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESUME -->
+  <section class="section resume-section" id="resume">
+    <div class="section-head">
+      <h2>Resume</h2>
+      <p class="section-sub">Covers ReconPipe, Bugcrowd work, and certifications in full.</p>
+    </div>
+    <a href="Vijay_Resume.pdf" download class="btn btn-primary btn-large">Download resume (PDF)</a>
+    <p class="resume-note">Replace <code>Vijay_Resume.pdf</code> in the project folder with your own file — the button already points at it.</p>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <div class="contact-grid">
+      <a href="mailto:vijayvenkatesh6202@gmail.com" class="contact-link">
+        <span class="contact-label">Email</span>
+        <span class="contact-value">vijayvenkatesh6202@gmail.com</span>
+      </a>
+      <a href="https://github.com/VijayPentester" class="contact-link" target="_blank" rel="noopener">
+        <span class="contact-label">GitHub</span>
+        <span class="contact-value">github.com/VijayPentester</span>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p>Built by Vijay. Recon-first, always.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
