@@ -1,52 +1,31 @@
-// ---- Edit these to customise the site ----
-const CONFIG = {
-  githubUsername: "VijayPentester",
-  resumeFile: "Vijay_Resume.pdf",
-  email: "your.email@example.com"
-};
+// Scroll-reveal for sections
+try {
+  const els = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('in');
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.15 });
+  els.forEach(el => io.observe(el));
+} catch (e) {}
 
-// ---- Mobile nav toggle ----
-const navToggle = document.getElementById("nav-toggle");
-const siteNav = document.getElementById("site-nav");
-navToggle.addEventListener("click", () => {
-  const isOpen = siteNav.classList.toggle("open");
-  navToggle.setAttribute("aria-expanded", String(isOpen));
-});
-document.querySelectorAll(".nav-links a").forEach(link => {
-  link.addEventListener("click", () => {
-    siteNav.classList.remove("open");
-    navToggle.setAttribute("aria-expanded", "false");
-  });
-});
-
-// ---- Message form: builds a mailto link (no backend on a static site) ----
-const messageForm = document.getElementById("message-form");
-if (messageForm) {
-  messageForm.addEventListener("submit", (e) => {
-    e.preventDefault();
-    const name = document.getElementById("mf-name").value.trim();
-    const email = document.getElementById("mf-email").value.trim();
-    const message = document.getElementById("mf-message").value.trim();
-
-    const subject = encodeURIComponent(`Portfolio contact from ${name}`);
-    const body = encodeURIComponent(`${message}\n\n— ${name} (${email})`);
-    window.location.href = `mailto:${CONFIG.email}?subject=${subject}&body=${body}`;
-  });
-}
-
-// ---- Active nav link on scroll ----
-const sections = document.querySelectorAll("main .section, .hero");
-const navLinks = document.querySelectorAll(".nav-links a[href^='#']");
-
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      const id = entry.target.id;
-      navLinks.forEach(link => {
-        link.style.color = link.getAttribute("href") === `#${id}` ? "var(--teal)" : "";
-      });
-    }
-  });
-}, { rootMargin: "-50% 0px -50% 0px" });
-
-sections.forEach(section => observer.observe(section));
+// Terminal typing effect: whoami -> Vijay V
+try {
+  const typedEl = document.getElementById('typed');
+  const fullText = 'Vijay V';
+  if (typedEl) {
+    typedEl.innerHTML = '<span class="caret"></span>';
+    let i = 0;
+    const type = () => {
+      if (i <= fullText.length) {
+        typedEl.innerHTML = fullText.slice(0, i) + '<span class="caret"></span>';
+        i++;
+        setTimeout(type, 110);
+      }
+    };
+    setTimeout(type, 500);
+  }
+} catch (e) {}

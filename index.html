@@ -2,233 +2,252 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vijay — Web Application Security &amp; Bug Bounty</title>
-<meta name="description" content="Vijay — final-year cybersecurity student focused on web application penetration testing, recon automation, and bug bounty hunting.">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Vijay V — Web Application Security &amp; Penetration Testing</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header class="site-nav" id="site-nav">
-  <a href="#top" class="nav-mark">Vijay<span class="nav-mark-dim">.</span></a>
-  <nav class="nav-links" id="nav-links">
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#bugbounty">Experience</a>
-    <a href="#reconpipe">ReconPipe</a>
-    <a href="#projects">Projects</a>
-    <a href="#certifications">Certifications</a>
-    <a href="#contact" class="nav-cta">Contact</a>
-  </nav>
-  <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
-    <span></span><span></span><span></span>
-  </button>
-</header>
+<nav>
+  <div class="wrap">
+    <div class="brand">vijay<span>@</span>security</div>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#bugbounty">Bug Bounty</a></li>
+      <li><a href="#labs">Labs</a></li>
+      <li><a href="#certs">Certs</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
 
-<main id="top">
-
-  <!-- HERO -->
-  <section class="hero" id="hero">
-    <div class="hero-banner" aria-hidden="true"></div>
-    <div class="hero-content">
-      <div class="avatar" aria-hidden="true">V</div>
-      <h1>Vijay</h1>
-      <p class="hero-role">Cybersecurity Student &nbsp;|&nbsp; Web Application Security &nbsp;|&nbsp; Bug Bounty Hunter</p>
-      <div class="hero-actions">
-        <a href="#contact" class="btn btn-primary">Contact Me</a>
-        <a href="#reconpipe" class="btn btn-ghost">View Work</a>
-        <a href="https://github.com/VijayPentester" class="btn btn-ghost" target="_blank" rel="noopener">GitHub</a>
-        <a href="Vijay_Resume.pdf" download class="btn btn-ghost">Resume</a>
+<section class="hero" id="home">
+  <img class="hero-img" src="hero.jpeg" alt="">
+  <div class="hero-overlay"></div>
+  <div class="wrap hero-content">
+    <div class="hero-tag mono">root access // cybersecurity</div>
+    <div class="avatar-wrap"><img class="hero-avatar" src="profile.jpeg" alt="Vijay V"></div>
+    <h1>VIJAY V</h1>
+    <p class="role-tagline">B.E. CSE Student | Cybersecurity | Web Application Security | Penetration Testing</p>
+    <p class="hero-desc">Final-year B.E. CSE student focused on Web Application Security, Penetration Testing, and ethical security testing — building practical skills through hands-on labs, reconnaissance, and bug bounty learning.</p>
+    <div class="hero-btns">
+      <a href="#projects" class="btn primary">View Projects</a>
+      <a href="Vijay_Resume.pdf" class="btn" target="_blank" rel="noopener">Resume</a>
+      <a href="https://github.com/vijaypentester" class="btn" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/VijayPentester" class="btn" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+    <div class="term-box">
+      <div class="term-bar"><i></i><i></i><i></i></div>
+      <div class="term-body">
+        <div><span class="prompt">vijay@security</span>:~$ whoami</div>
+        <div id="typed">Vijay V<span class="caret"></span></div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- ABOUT -->
-  <section class="section" id="about">
-    <p class="section-eyebrow">About</p>
-    <h2 class="section-title">Professional Summary</h2>
+<section id="about">
+  <div class="wrap reveal">
+    <div class="eyebrow mono">About Me</div>
+    <h2>Final-year CSE student, focused on offensive security</h2>
     <div class="about-grid">
-      <div class="about-copy">
-        <p>I'm a final-year B.E. Computer Science &amp; Engineering student specializing in cybersecurity, with a focus on <strong>web application security</strong> and <strong>bug bounty hunting</strong>. My learning is hands-on: I've built a multi-tool recon pipeline from scratch, worked through PortSwigger's Web Security Academy methodically, and I'm actively hunting on Bugcrowd's public programs.</p>
-        <p>I hold the NPTEL Ethical Hacking certification and I'm currently preparing for eJPT. I enjoy the recon side of a pentest most — mapping an attack surface properly before touching a single request — and I try to automate that discipline rather than skip it under time pressure.</p>
-        <p>I'm looking to start a full-time role in application security or penetration testing from January 2027.</p>
-      </div>
-      <div class="about-side">
-        <div class="connect-card">
-          <h3>Connect</h3>
-          <a href="mailto:your.email@example.com" class="connect-row">
-            <span class="connect-label">Email</span><span>your.email@example.com</span>
-          </a>
-          <a href="https://github.com/VijayPentester" class="connect-row" target="_blank" rel="noopener">
-            <span class="connect-label">GitHub</span><span>github.com/VijayPentester</span>
-          </a>
-          <a href="tel:+916374240950" class="connect-row">
-            <span class="connect-label">Phone</span><span>+91 63742 40950</span>
-          </a>
-        </div>
-        <div class="edu-card">
-          <h3>Education</h3>
-          <p class="edu-degree">B.E. Computer Science &amp; Engineering</p>
-          <p class="edu-school">Anjalai Ammal Mahalingam Engineering College</p>
-          <p class="edu-year">2023 – 2027</p>
-        </div>
+      <div>
+        <p>I am a final-year B.E. Computer Science and Engineering student with a strong interest in Cybersecurity, Web Application Security, and Penetration Testing.</p>
+        <p>I am developing practical security skills through PortSwigger Web Security Academy, TryHackMe, OverTheWire, and hands-on security projects. My current focus is understanding web vulnerabilities, reconnaissance, API security, and ethical bug bounty methodology.</p>
+        <p>I am looking to build my career in Web Application Security and Penetration Testing.</p>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- SKILLS -->
-  <section class="section section-alt" id="skills">
-    <p class="section-eyebrow">Skills &amp; Toolkit</p>
-    <h2 class="section-title">Core Competencies</h2>
-    <ul class="chip-list chip-list-wide">
-      <li>Web Application Security Testing</li>
-      <li>OWASP Top 10</li>
-      <li>Recon &amp; Enumeration</li>
-      <li>Vulnerability Assessment</li>
-      <li>Network Security Fundamentals</li>
-      <li>Linux (Kali)</li>
-      <li>Security Automation (Python/Bash)</li>
-      <li>API Security <span class="chip-note">learning</span></li>
-    </ul>
-    <h3 class="skills-subhead">Tools &amp; Tech</h3>
-    <ul class="chip-list">
-      <li>Burp Suite</li><li>Subfinder</li><li>Amass</li><li>Httpx</li>
-      <li>Naabu</li><li>Waybackurls</li><li>ParamSpider</li><li>Katana</li><li>Nuclei</li>
-    </ul>
-  </section>
-
-  <!-- BUG BOUNTY / EXPERIENCE -->
-  <section class="section" id="bugbounty">
-    <p class="section-eyebrow">Experience</p>
-    <h2 class="section-title">Independent Bug Bounty Hunting</h2>
-    <div class="timeline-entry">
-      <div class="timeline-head">
-        <h3>Bug Bounty Hunter — Self-directed</h3>
-        <span class="timeline-date">Bugcrowd &middot; 2026 – Present</span>
+<section id="skills">
+  <div class="wrap reveal">
+    <div class="eyebrow mono">Skills</div>
+    <h2>Tools &amp; technologies</h2>
+    <div class="skill-cols">
+      <div>
+        <h3>Web App Security</h3>
+        <ul>
+          <li>XSS</li>
+          <li>SQL Injection</li>
+          <li>IDOR / Access Control</li>
+          <li>CSRF</li>
+          <li>Authentication</li>
+          <li>API Security</li>
+        </ul>
       </div>
-      <ul class="timeline-points">
-        <li>Hunting on Bugcrowd's public programs, testing systematically against the OWASP core: IDOR, broken authentication, XSS, CSRF, and business logic flaws.</li>
-        <li>Run full recon before any active testing — subdomains, live hosts, endpoints, and parameters — using the same pipeline built for <a href="#reconpipe">ReconPipe</a>.</li>
-        <li>Working through PortSwigger's Web Security Academy and <em>Real-World Bug Hunting</em> (Peter Yaworski) to build methodology rather than rely on scanners alone.</li>
-        <li>Spend time using each target as a normal user first, to build intuition for what "normal" looks like before hunting for what breaks it.</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- RECONPIPE -->
-  <section class="section section-alt" id="reconpipe">
-    <p class="section-eyebrow">Final-Year Project</p>
-    <h2 class="section-title">ReconPipe</h2>
-    <p class="section-lede">A Python CLI recon pipeline chaining eight tools into one repeatable workflow. Four-person team project — I own the Recon Engine module end to end.</p>
-    <div class="feature-grid">
-      <div class="feature-copy">
-        <p>Instead of running each recon tool by hand, ReconPipe chains them into a single pass: subdomain enumeration and dedup, live host detection, port scanning, endpoint discovery and crawling, parameter mining, and finally vulnerability scanning — with clean data handed off at every stage instead of noise.</p>
-        <p>Next up on the roadmap: an automatic risk score computed from Nuclei severity right after each scan, feeding into a consolidated report.</p>
-        <a href="https://github.com/VijayPentester" class="link-arrow" target="_blank" rel="noopener">View the repository on GitHub</a>
+      <div>
+        <h3>Reconnaissance</h3>
+        <ul>
+          <li>Subdomain Enumeration</li>
+          <li>Live Host Discovery</li>
+          <li>Endpoint Discovery</li>
+          <li>Vulnerability Scanning</li>
+        </ul>
       </div>
-      <div class="pipeline">
-        <div class="pipe-step"><span class="pipe-index">01</span><span class="pipe-name">Subfinder</span><span class="pipe-desc">Passive subdomain enumeration</span></div>
-        <div class="pipe-step"><span class="pipe-index">02</span><span class="pipe-name">Amass</span><span class="pipe-desc">Active enumeration &amp; dedup</span></div>
-        <div class="pipe-step"><span class="pipe-index">03</span><span class="pipe-name">Httpx</span><span class="pipe-desc">Live host &amp; tech fingerprinting</span></div>
-        <div class="pipe-step"><span class="pipe-index">04</span><span class="pipe-name">Naabu</span><span class="pipe-desc">Port scanning</span></div>
-        <div class="pipe-step"><span class="pipe-index">05</span><span class="pipe-name">Waybackurls</span><span class="pipe-desc">Historical endpoint discovery</span></div>
-        <div class="pipe-step"><span class="pipe-index">06</span><span class="pipe-name">Katana</span><span class="pipe-desc">Active crawling</span></div>
-        <div class="pipe-step"><span class="pipe-index">07</span><span class="pipe-name">ParamSpider</span><span class="pipe-desc">Parameter mining</span></div>
-        <div class="pipe-step"><span class="pipe-index">08</span><span class="pipe-name">Nuclei</span><span class="pipe-desc">Vulnerability scanning &amp; triage</span></div>
+      <div>
+        <h3>Tools</h3>
+        <ul>
+          <li>Burp Suite / Nmap</li>
+          <li>Subfinder / Amass</li>
+          <li>Httpx / Naabu</li>
+          <li>Katana / ffuf</li>
+          <li>Waybackurls / ParamSpider / Nuclei</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Programming</h3>
+        <ul>
+          <li>Python</li>
+          <li>Bash</li>
+          <li>JavaScript</li>
+          <li>HTML / CSS</li>
+          <li>SQL</li>
+          <li>Linux</li>
+        </ul>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- PROJECTS -->
-  <section class="section" id="projects">
-    <p class="section-eyebrow">Projects</p>
-    <h2 class="section-title">Featured Projects</h2>
-    <div class="project-grid">
-      <article class="project-card">
-        <h3>ReconPipe</h3>
-        <p class="project-tag">Python &middot; CLI &middot; Recon Automation</p>
-        <p>An 8-tool recon pipeline built for a final-year project — see the full breakdown above.</p>
-        <a href="#reconpipe" class="link-arrow">Read more</a>
-      </article>
-      <article class="project-card">
-        <h3>Aries</h3>
-        <p class="project-tag">Flask &middot; SQLite &middot; Dashboard</p>
-        <p>A dark-themed web dashboard wrapping ReconPipe — scan history, a start-scan button that triggers the pipeline directly, and Nuclei findings broken down by severity.</p>
-        <a href="https://github.com/VijayPentester" class="link-arrow" target="_blank" rel="noopener">View repository</a>
-      </article>
-    </div>
-  </section>
-
-  <!-- CERTIFICATIONS -->
-  <section class="section section-alt" id="certifications">
-    <p class="section-eyebrow">Certifications</p>
-    <h2 class="section-title">Learning &amp; Credentials</h2>
-    <div class="cert-grid">
-      <div class="cert-card">
-        <h3>Ethical Hacking</h3>
-        <p class="cert-issuer">NPTEL</p>
-        <p class="cert-status cert-done">Completed</p>
+<section id="projects">
+  <div class="wrap reveal">
+    <div class="eyebrow mono">Projects</div>
+    <h2>Featured project</h2>
+    <div class="card card-feature">
+      <div class="card-head">
+        <h3>ReconPipe — Bug Bounty Recon-to-Report Automation</h3>
+        <span class="status">College Final-Year Project</span>
       </div>
-      <div class="cert-card">
-        <h3>Cyber Security 101</h3>
-        <p class="cert-issuer">TryHackMe</p>
-        <p class="cert-status cert-done">Completed</p>
+      <p>A security reconnaissance automation project built for authorized domains. It automates reconnaissance stages including subdomain enumeration, live host discovery, endpoint discovery, vulnerability scanning, and report generation.</p>
+      <div class="chip-row">
+        <span class="chip">Python</span>
+        <span class="chip">Subfinder</span>
+        <span class="chip">Amass</span>
+        <span class="chip">Httpx</span>
+        <span class="chip">Naabu</span>
+        <span class="chip">Katana</span>
+        <span class="chip">Waybackurls</span>
+        <span class="chip">ParamSpider</span>
+        <span class="chip">Nuclei</span>
       </div>
-      <div class="cert-card">
-        <h3>Pre Security</h3>
-        <p class="cert-issuer">TryHackMe</p>
-        <p class="cert-status cert-done">Completed</p>
-      </div>
-      <div class="cert-card">
-        <h3>eJPT</h3>
-        <p class="cert-issuer">INE Security</p>
-        <p class="cert-status cert-progress">Targeting January 2027</p>
+      <div class="hero-btns" style="margin-top:16px;">
+        <a href="https://github.com/vijaypentester" class="btn" target="_blank" rel="noopener">GitHub</a>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- CONTACT -->
-  <section class="section" id="contact">
-    <p class="section-eyebrow">Let's Talk</p>
-    <h2 class="section-title">Get in Touch</h2>
-    <p class="section-lede">Open to Application Security / Junior Penetration Tester roles from January 2027. Fastest reply via email.</p>
-
-    <div class="contact-layout">
-      <div class="connect-card">
-        <a href="mailto:your.email@example.com" class="connect-row">
-          <span class="connect-label">Email</span><span>your.email@example.com</span>
-        </a>
-        <a href="https://github.com/VijayPentester" class="connect-row" target="_blank" rel="noopener">
-          <span class="connect-label">GitHub</span><span>github.com/VijayPentester</span>
-        </a>
-        <a href="tel:+916374240950" class="connect-row">
-          <span class="connect-label">Phone</span><span>+91 63742 40950</span>
-        </a>
-        <a href="Vijay_Resume.pdf" download class="btn btn-primary contact-resume-btn">Download Resume (PDF)</a>
+<section id="bugbounty">
+  <div class="wrap reveal">
+    <div class="eyebrow mono">Bug Bounty</div>
+    <h2>Bug bounty learning</h2>
+    <div class="card">
+      <p>Currently developing practical skills in ethical bug bounty hunting, with a focus on web application security and authorized testing.</p>
+      <div class="chip-row">
+        <span class="chip">Reconnaissance</span>
+        <span class="chip">Attack Surface Discovery</span>
+        <span class="chip">XSS</span>
+        <span class="chip">SQL Injection</span>
+        <span class="chip">Access Control</span>
+        <span class="chip">Authentication</span>
+        <span class="chip">CSRF</span>
+        <span class="chip">API Security</span>
+        <span class="chip">Vulnerability Validation</span>
+        <span class="chip">Responsible Disclosure</span>
       </div>
-
-      <form class="message-form" id="message-form">
-        <h3>Send a message</h3>
-        <label for="mf-name">Name*</label>
-        <input type="text" id="mf-name" required>
-        <label for="mf-email">Email*</label>
-        <input type="email" id="mf-email" required>
-        <label for="mf-message">Message*</label>
-        <textarea id="mf-message" rows="4" required></textarea>
-        <button type="submit" class="btn btn-primary">Send Message</button>
-        <p class="form-note">Opens your email app with this pre-filled — there's no backend on this static site.</p>
-      </form>
+      <p class="muted" style="margin-top:14px;">Platform: Bugcrowd — Learning / Preparing for authorized bug bounty testing.</p>
     </div>
-  </section>
+  </div>
+</section>
 
-</main>
+<section id="labs">
+  <div class="wrap reveal">
+    <div class="eyebrow mono">Security Labs</div>
+    <h2>Hands-on practice</h2>
+    <div class="card">
+      <h3>PortSwigger Web Security Academy</h3>
+      <p>Hands-on practice with real-world web application vulnerabilities.</p>
+      <div class="chip-row">
+        <span class="chip">SQL Injection</span>
+        <span class="chip">XSS</span>
+        <span class="chip">Access Control</span>
+        <span class="chip">CSRF</span>
+        <span class="chip">Authentication</span>
+      </div>
+    </div>
+    <div class="card">
+      <h3>TryHackMe</h3>
+      <p>Completed the Pre Security learning path and continuing practical cybersecurity learning.</p>
+    </div>
+    <div class="card">
+      <h3>OverTheWire</h3>
+      <p>Practicing Linux and command-line fundamentals through Bandit.</p>
+    </div>
+  </div>
+</section>
 
-<footer class="site-footer">
-  <p>&copy; 2026 Vijay. Built with care.</p>
-</footer>
+<section id="certs">
+  <div class="wrap reveal">
+    <div class="eyebrow mono">Certifications</div>
+    <h2>Learning, documented</h2>
+    <div class="chip-row">
+      <span class="chip">NPTEL — Ethical Hacking</span>
+      <span class="chip">NPTEL — Foundations of Deep Learning</span>
+      <span class="chip">TryHackMe — Pre Security</span>
+    </div>
+
+    <div class="eyebrow mono" style="margin-top:34px;">Achievements</div>
+    <h2>Proof of work</h2>
+    <div class="chip-row">
+      <span class="chip">NPTEL Ethical Hacking Certification</span>
+      <span class="chip">NPTEL Deep Learning Certification</span>
+      <span class="chip">TryHackMe Pre Security Completion</span>
+      <span class="chip">PortSwigger Lab Progress</span>
+      <span class="chip">ReconPipe — Final Year Project</span>
+    </div>
+
+    <div class="eyebrow mono" style="margin-top:34px;">Write-ups</div>
+    <p class="muted">Coming soon — write-ups on IDOR, XSS, SQL Injection, CSRF, Authentication, API Security, and Reconnaissance concepts as I work through labs.</p>
+
+    <div class="eyebrow mono" style="margin-top:34px;">Education</div>
+    <div class="row"><span>B.E., Computer Science Engineering — Anjalai Ammal Mahalingam Engineering College</span><span class="right">2023 – 2027</span></div>
+    <p class="muted">Final Year — Focus: Cybersecurity &amp; Web Application Security</p>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap reveal">
+    <div class="eyebrow mono">Contact</div>
+    <h2>Let's connect</h2>
+    <p class="muted" style="max-width:50ch;">Open to opportunities in Cybersecurity, VAPT, and Web Application Security.</p>
+    <div class="contact-row">
+      <a href="https://github.com/vijaypentester" target="_blank" rel="noopener">GitHub ↗</a>
+      <a href="https://www.linkedin.com/in/VijayPentester" target="_blank" rel="noopener">LinkedIn ↗</a>
+      <a href="mailto:vijayvenkatesh6202@gmail.com">Email</a>
+      <a href="tel:6374240950">6374240950</a>
+      <a href="Vijay_Resume.pdf" target="_blank" rel="noopener">Download Resume</a>
+    </div>
+
+    <form class="contact-form" action="https://formsubmit.co/vijayvenkatesh6202@gmail.com" method="POST">
+      <input type="hidden" name="_subject" value="New message from portfolio site">
+      <input type="hidden" name="_captcha" value="false">
+      <div class="form-row">
+        <input type="text" name="name" placeholder="Your name" required>
+        <input type="email" name="email" placeholder="Your email" required>
+      </div>
+      <textarea name="message" rows="4" placeholder="Message" required></textarea>
+      <button type="submit">Send message</button>
+    </form>
+  </div>
+</section>
+
+<footer>Vijay V — Web Application Security &amp; Penetration Testing</footer>
 
 <script src="script.js"></script>
 </body>
